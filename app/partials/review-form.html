@@ -1,0 +1,48 @@
+<form name="reviewForm" ng-controller="ReviewController as reviewCtrl"
+                        ng-submit="reviewForm.$valid && reviewCtrl.addReview()"
+                        novalidate>
+  <div ng-show="reviewCtrl.review.show">
+    <div class="col-md-4 col-sm-6 left-col">
+  name: {{reviewCtrl.review.name}} <br>
+  place: {{reviewCtrl.review.place}}<br>
+  rating: {{reviewCtrl.review.rating}}
+    <!-- <div data-ng-repeat="i in range(reviewCtrl.review.rating)">
+      <i class="glyphicon glyphicon-star"></i>
+    </div> -->
+    </div>
+    <div class="col-md-8 col-sm-6 left-col">
+
+    <blockquote>
+      {{reviewCtrl.review.notes}}
+    </blockquote>
+  </div>
+  </div>
+
+  <div class="checkbox">
+    <label>
+      <input ng-model="reviewCtrl.review.show" type="checkbox"> - Display Preview
+  </div>
+  *Rating: <select  class="form-control"
+  ng-model="reviewCtrl.review.rating" required>
+    <option value="1">1 star </option>
+    <option value="2">2 star </option>
+    <option value="3">3 star </option>
+    <option value="4">4 star </option>
+  </select>
+  <br>
+  <div class="form-group">
+  <label>*name: </label>
+  <input class="form-control" ng-model="reviewCtrl.review.name" type="text" required/>
+  </div>
+<div class="form-group">
+  <label>place: </label>
+  <input class="form-control" ng-model="reviewCtrl.review.place" type="text"/>
+</div>
+
+  <textarea
+  class="form-control" rows="3"
+  ng-model="reviewCtrl.review.notes"></textarea>
+<br>
+
+  <input class="btn btn-info" type="submit" value="submit">
+</form>

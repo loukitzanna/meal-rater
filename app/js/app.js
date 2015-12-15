@@ -6,12 +6,12 @@
   app.controller('ratingController', function(){
     this.meals = meals;
   })
-  // .directive("bookGenres", function(){
-  //   return {
-  //     restrict: "E",
-  //     templateUrl:"partials/book-genres.html"
-  //   }
-  // })
+  .directive("reviewForm", function(){
+    return {
+      restrict: "E",
+      templateUrl:"partials/review-form.html"
+    }
+  })
   ;
 
   app.controller('ReviewController', function(){
