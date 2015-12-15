@@ -1,0 +1,12 @@
+<div class="container" ng-controller="ratingController as ratings">
+  <div class="card row" ng-repeat="meal in ratings.meals">
+    <div class="col-md-4 col-sm-6 left-col">
+    <h3>Name: {{meal.name}}</h3>
+    <h3>Place: {{meal.place}}</h3>
+    <h3>Rating: {{meal.rating}}/10</h3>
+  </div>
+  <div class="col-md-8 col-sm-6 right-col">
+    <p>Notes: {{meal.notes}}</p>
+  </div>
+  </div>
+</div>

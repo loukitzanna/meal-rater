@@ -1,0 +1,27 @@
+.center{
+  text-align: center;
+}
+
+.ng-invalid.ng-dirty:not('ng-submitted'){
+  border-color:red;
+}
+.ng-valid.ng-dirty:not('ng-submitted'){
+  border-color:green;
+}
+
+.card{
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  background-color: #F5F5F5;
+  box-shadow: 0 0 20px #8C8B8B;
+}
+
+.card .left-col{
+  padding-right: 5px;
+}
+
+.card .right-col{
+  padding-left: 5px;
+}
