@@ -1,3 +1,9 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,100,300italic);
+
+body{
+  font-family: 'Lato', sans-serif;
+}
+
 .center{
   text-align: center;
 }
@@ -20,6 +26,9 @@
 
 .card .left-col{
   padding-right: 5px;
+}
+.card .left-col h1, .card .left-col h2, .card .left-col h3{
+  margin-top: 0;
 }
 
 .card .right-col{

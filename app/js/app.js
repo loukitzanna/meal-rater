@@ -17,7 +17,7 @@
   app.controller('ReviewController', function(){
     this.review={};
     this.addReview=function(){
-      meals.push(this.review);
+      meals.unshift(this.review);
       this.review={};
     };
   });
