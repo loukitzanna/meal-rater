@@ -3,7 +3,7 @@
     <form name="reviewForm" ng-controller="ReviewController as reviewCtrl"
                             ng-submit="reviewForm.$valid && reviewCtrl.addReview()"
                             novalidate>
-      <div ng-show="reviewCtrl.review.show">
+      <div class="col-md-12" ng-show="reviewCtrl.review.show">
         <div class="col-md-4 col-sm-6 left-col">
       name: {{reviewCtrl.review.name}} <br>
       place: {{reviewCtrl.review.place}}<br>
@@ -20,33 +20,45 @@
       </div>
       </div>
 
-      <div class="checkbox">
+      <div class="checkbox col-md-3 col-xs-12">
         <label>
           <input ng-model="reviewCtrl.review.show" type="checkbox"> - Display Preview
       </div>
-      *Rating: <select  class="form-control"
+
+      <div class="form-group col-md-3 col-xs-12">
+      <label>*Name: </label>
+      <input class="form-control" ng-model="reviewCtrl.review.name" type="text" required/>
+      </div>
+    <div class="form-group col-md-3 col-xs-12">
+      <label>Place: </label>
+      <input class="form-control" ng-model="reviewCtrl.review.place" type="text"/>
+    </div>
+
+    <div class="col-md-3 col-xs-12">
+      <label>*Rating:</label>
+      <select  class="form-control"
       ng-model="reviewCtrl.review.rating" required>
         <option value="1">1 star </option>
         <option value="2">2 star </option>
         <option value="3">3 star </option>
         <option value="4">4 star </option>
+        <option value="5">5 star </option>
+        <option value="6">6 star </option>
+        <option value="7">7 star </option>
+        <option value="8">8 star </option>
+        <option value="9">9 star </option>
+        <option value="10">10 star </option>
       </select>
-      <br>
-      <div class="form-group">
-      <label>*name: </label>
-      <input class="form-control" ng-model="reviewCtrl.review.name" type="text" required/>
-      </div>
-    <div class="form-group">
-      <label>place: </label>
-      <input class="form-control" ng-model="reviewCtrl.review.place" type="text"/>
     </div>
-
+<div class="col-md-12 col-xs-12">
+    <label>Notes:</label>
       <textarea
       class="form-control" rows="3"
       ng-model="reviewCtrl.review.notes"></textarea>
-<br>
-
+</div>
+    <div class="col-md-12 col-xs-12">
       <input class="btn btn-info" type="submit" value="submit">
+    </div>
     </form>
   </div>
 </div>

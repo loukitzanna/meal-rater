@@ -24,16 +24,16 @@
 
 var meals = [
   {
-    name: 'Mac and Cheese',
+    name: 'Salad',
     place: 'Paradise Bakery and Cafe',
-    notes: 'The most inventive and entertaining fantasy saga of our time—warrants one hell of an introduction. I loved this book!',
+    notes: 'Etiam rhoncus. Suspendisse potenti. Sed fringilla mauris sit amet nibh. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Sed cursus turpis vitae tortor. Quisque id odio.',
     rating: 4,
     categories: { 'lunch': true, fantasy: true }
   },
   {
     name: 'Lo Mein',
     place: 'Pei Wei',
-    notes: 'The most inventive and entertaining fantasy saga of our time—warrants one hell of an introduction. I loved this book!',
+    notes: 'Nam at tortor in tellus interdum sagittis. In dui magna, posuere eget, vestibulum et, tempor auctor, justo. In ac felis quis tortor malesuada pretium. Nulla sit amet est. Fusce commodo aliquam arcu.',
     rating: 7,
     categories: { 'lunch': true, fantasy: true }
   }
