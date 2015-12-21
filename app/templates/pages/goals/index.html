@@ -13,12 +13,17 @@
 <body ng-app="mealRater">
 
   <div class="container-fluid" ng-include="'partials/navigation.html'"></div>
+  <div class="container">
+    <h1>Goals</h1>
+    <h3>Some projected goals for the future of this project</h3>
 
-<h1 class="center">Meal Rater App!</h1>
-<!-- <div class="container"  ng-include="'partials/rating.html'"></div> -->
-<div ng-view></div>
-  <!-- <div class="container" ng-include="'partials/app.html'"></div> -->
-
+    <ul>
+      <li>Add persistance through database use</li>
+      <li>Add authentication and user logging</li>
+      <li>Edit previous entries</li>
+      <li>Filter by rating</li>
+    </ul>
+  </div>
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="js/app.js"></script>
